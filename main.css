@@ -1,14 +1,46 @@
+/*Fonts*/
+@font-face {
+	font-family: Lumiera;
+	src: url(fonts/lumiera/Lumiera.ttf);
+}
+
+@font-face {
+	font-family: Muli;
+	src: url(fonts/muli/Muli-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url(fonts/noto_sans/NotoSans-Regular.ttf);
+	src: url(fonts/noto_sans/NotoSans-Italic.ttf);
+}
+
+/*remaining css*/
+
+header a {
+	font-family: Muli;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 12px;
+	color: #5A6174;
+}
+
+header a:hover {
+	color: #EA666C;
+}
+
 body {
 	background: #F9F2EA;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+.example::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-body {
+.example {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -19,21 +51,73 @@ body {
 	margin-right: 15%;
 }
 
-img {
+.intro {
+	font-family: Lumiera;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: ;
+	color: #3F3E46;
+}
+
+.intro-desc {
+	font-family: Muli;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 30px;
+	color: #3F3E46;
+}
+
+.project-image {
 	width: 100%;
 	height: auto;
 	display: block;
 }
 
-.row p {
-	width: 90%;
+.hvrbox-text a {
+	font-family: Muli;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	text-decoration: none;
+	color: #FEFFFF;
+}
+
+.hvrbox-text a:hover {
+	color: #EA666C;
+}
+
+.has-tags h4{
+	font-family: Muli;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	color: #3F3E46;
+}
+
+.has-tags p {
+	font-family: Muli;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 25px;
+	color: #3F3E46;
 }
 
 .has-tags span {
 	background: #FEFFFF;
 	border-radius: 30px;
 	padding: 5px 15px;
+
+	font-family: 'Noto Sans';
 	font-style: italic;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 27px;
+	color: #5A6174;
+
 	float: left;
 }
 
@@ -41,10 +125,29 @@ footer {
 	margin-top: 5%;
 	padding-top: 4%;
 	padding-bottom: 4%;
-	padding-left: 15%;
+	padding-left: 18%;
 	background-color: DarkSalmon;
 	color: white;
 	background: #5A6174;
+}
+
+footer p {
+	font-family: Muli;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 25px;
+	color: #FEFFFF;
+}
+
+footer a {
+	font-size: 34px;
+	color: #FEFFFF;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #EA666C;
 }
 
 
